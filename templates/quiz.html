@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="card p-2 m-2">
+        <h1 class="text-center p-2">QUIZ</h1>
+        <form class="mx-auto border border-dark p-2" id="" action="{{ url_for('uploadQuiz') }}" method="POST" enctype="multipart/form-data">
+            Pilih Foto
+            <input name="file" type="file" id="inputGroupFile04" accept="image/*">
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+    </div>
+
+{% endblock %}

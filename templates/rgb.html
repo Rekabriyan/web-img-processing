@@ -1,0 +1,16 @@
+<table style="background-color: white;">
+    <tr>
+        <th style="width: 100px;">Pixel</th>
+        <th style="width: 100px;">R</th>
+        <th style="width: 100px;">G</th>
+        <th style="width: 100px;">B</th>
+    </tr>
+    {% for i in range(img_dim[0] * img_dim[1]) %}
+    <tr>
+        <td>{{ i + 1 }}</td>
+        <td>{{ img_rgb_val[i][0] }}</td>
+        <td>{{ img_rgb_val[i][1] }}</td>
+        <td>{{ img_rgb_val[i][2] }}</td>
+    </tr>
+    {% endfor %}
+</table>
